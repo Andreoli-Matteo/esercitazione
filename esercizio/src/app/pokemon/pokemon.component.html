@@ -2,6 +2,6 @@
 <button (click)="cerca()">cerca</button>
 
 <div *ngFor="let x of pokemon ">
-    <a routerLink="/pokemon/{{vai(x.url)}}">{{x.name}}</a><br>
+    <a routerLink="/vedi/{{vai(x.url)}}">{{x.name}}</a><br>
     {{x.url}}
 </div>

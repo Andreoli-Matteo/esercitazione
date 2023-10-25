@@ -5,7 +5,7 @@ import { VediComponent } from './vedi/vedi.component';
 
 const routes: Routes = [
   {path:'pokemon', component:PokemonComponent},
-  {path:'vedi', component:VediComponent},
+  {path:'vedi/:path', component:VediComponent},
   {path:'',redirectTo:'pokemon',pathMatch:'full'}
 ];
 
