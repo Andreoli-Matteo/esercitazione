@@ -25,6 +25,13 @@ export class VediComponent {
     this.obsProd = this.vedi.getProd(this.prodotto);
     this.obsProd.subscribe((data : Root1)=>{this.ris=data.pokemon;})
   }
+  vai(url:string){
+    const parts =url.split('/');
+    console.log(parts)
+    return parts.at(-2)
+  }
+
+
 
 
 

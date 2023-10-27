@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 import { ServiceComponent } from './service/service.component';
 import { VediComponent } from './vedi/vedi.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { VediComponent } from './vedi/vedi.component';
     
     PokemonComponent,
          ServiceComponent,
-         VediComponent
+         VediComponent,
+         InfoComponent
   ],
   imports: [
     BrowserModule,HttpClientModule,

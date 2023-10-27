@@ -1,3 +1,11 @@
-<div *ngFor="let x of ris">
-    <p>{{x.pokemon.name}}</p>
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4 bg-warning text-white">
+        <div *ngFor="let x of ris">
+          <a routerLink="/info/{{vai(x.pokemon.url)}}">{{x.pokemon.name}}</a>
+             <p>{{x.pokemon.url}}</p>
+        </div>
+      </div>
+    </div>
 </div>

@@ -1,7 +1,13 @@
 
-<button (click)="cerca()">cerca</button>
+<button type="button" class="btn btn-info" (click)="cerca()">cerca</button>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4 bg-dark text-white">
+         <div *ngFor="let x of pokemon ">
+           <a routerLink="/vedi/{{vai(x.url)}}">{{x.name}}</a><br>
+            {{x.url}}
 
-<div *ngFor="let x of pokemon ">
-    <a routerLink="/vedi/{{vai(x.url)}}">{{x.name}}</a><br>
-    {{x.url}}
+         </div>
+      </div>
+    </div>
 </div>
